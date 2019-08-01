@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 100px auto 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+            width: 300px;
+        }
+
+        th,
+        td {
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+
+        td {
+            font: 14px "微软雅黑";
+        }
+
+        tbody tr {
+            background-color: #f0f0f0;
+        }
+
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <table>
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox" id="j_cbAll"/>
+            </th>
+            <th>菜名</th>
+            <th>饭店</th>
+        </tr>
+        </thead>
+        <tbody id="j_tb">
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>红烧肉</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>西红柿鸡蛋</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>油炸榴莲</td>
+            <td>田老师</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox"/>
+            </td>
+            <td>清蒸助教</td>
+            <td>田老师</td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // 获取全选按钮
+    var ckAll = document.getElementById("j_cbAll");
+    //获取所有的单选框
+    var cks = document.getElementById("j_tb").getElementsByTagName("input");
+    //点击全选按钮时，单选框的状态=全选按钮状态
+    ckAll.onclick = function () {
+        for (var i = 0; i < cks.length; i++) {
+            cks[i].checked = this.checked;
+        }
+    }
+    //为每个单选框增加点击事件
+    for (var j = 0; j < cks.length; j++) {
+        cks[j].onclick = function () {
+            flag = true;
+            //判断每个单选框的状态
+            for (var k = 0; k < cks.length; k++) {
+                if (!cks[k].checked) {
+                    flag = false;
+                    break;
+                }
+            }
+            ckAll.checked = flag;
+        }
+    }
+</script>
+</body>
+</html>
