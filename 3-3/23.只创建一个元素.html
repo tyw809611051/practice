@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="创建表格">
+<div id="dv"></div>
+<script>
+<!--有则删除，无则创建-->
+    document.getElementById("btn").onclick=function () {
+        var inputObj = document.createElement("input");
+        if (document.getElementById("btn2")) {
+            document.getElementById("dv").removeChild(document.getElementById("btn2"));
+        }
+        inputObj.type="button";
+        inputObj.value="按钮";
+        inputObj.id="btn2";
+        document.getElementById("dv").appendChild(inputObj);
+    }
+</script>
+</body>
+</html>

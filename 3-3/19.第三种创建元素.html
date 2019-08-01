@@ -8,9 +8,11 @@
 <input type="button" id="btn" value="创建元素">
 <div id="dv"></div>
 <script>
-    document.getElementById("btn").onclick=function () {
-        document.getElementById("dv").innerHTML("<p>哈哈</p>")
-    }
+document.getElementById("btn").onclick=function () {
+    var pObj = document.createElement("p");
+    pObj.innerText = "这是一个批";
+    document.getElementById("dv").appendChild(pObj);
+}
 </script>
 </body>
 </html>

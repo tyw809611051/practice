@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="创建表格">
+<div id="dv"></div>
+<script>
+    var arr = [
+        {name: "baidu", href: "https://www.baidu.com"},
+        {name: "youku", href: "https://www.baidu.com"},
+        {name: "tudou", href: "https://www.baidu.com"},
+        {name: "aiqiyi", href: "https://www.baidu.com"},
+    ];
+    //点击按钮创建表格
+    document.getElementById("btn").onclick = function () {
+        var tabObj = document.createElement("table");
+        document.getElementById("dv").appendChild(tabObj);
+        tabObj.border = "1";
+        tabObj.cellPadding = 0;
+        tabObj.cellSpacing = 0;
+        //    创建行
+        for (var i = 0; i < arr.length; i++) {
+            var trObj = document.createElement("tr");
+            //创建列
+            var tdObj1 = document.createElement("td");
+            //为第一个td添加内容
+            tdObj1.innerHTML = arr[i].name;
+            //为第二个td内容
+            var tdObj2 = document.createElement("td");
+            tdObj2.innerHTML = "<a href=" + arr[i].href + ">" + arr[i].name + "</a>";
+            //将td追加到tr中
+            trObj.appendChild(tdObj1);
+            trObj.appendChild(tdObj2);
+            tabObj.appendChild(trObj);
+
+        }
+    }
+</script>
+</body>
+</html>

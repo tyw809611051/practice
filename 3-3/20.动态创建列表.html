@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="btn" value="创建元素">
+<div id="dv"></div>
+<script>
+    var kungfu = ["xx", "asdf", "fghfg", "ere", "yukyu", "hbjm"];
+
+    // 创建点击事件
+    document.getElementById("btn").onclick = function () {
+        //    创建ul元素
+        var ulObj = document.createElement("ul");
+        //    追加到dv中
+        document.getElementById("dv").appendChild(ulObj);
+        //    循环遍历数组
+        for (var i = 0; i < kungfu.length; i++) {
+            //    创建li元素
+            var liObj = document.createElement("li");
+            //为每个li添加鼠标移入移出事件
+            liObj.onmouseover = mouseoverHandle;
+            liObj.onmouseout = mouseoutHandle;
+            liObj.innerHTML = kungfu[i];
+            //    追加到ul中
+            ulObj.appendChild(liObj);
+        }
+    }
+
+    function mouseoverHandle() {
+        this.style.backgroundColor = "red";
+    }
+
+    function mouseoutHandle() {
+        this.style.backgroundColor = "";
+    }
+</script>
+</body>
+</html>
