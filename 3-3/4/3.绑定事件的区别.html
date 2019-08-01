@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="btn" value="yiwen">
+<input type="button" value="解绑" id="btn2">
+<script>
+function f1() {
+    console.log("haha");
+}
+document.getElementById("btn").addEventListener("click",f1,false);
+document.getElementById("btn2").removeEventListener("click",f1,false);
+</script>
+</body>
+</html>
