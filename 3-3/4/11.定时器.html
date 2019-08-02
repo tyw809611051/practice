@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<input type="button" value="停止" id="btn">
+<script>
+function my$(element) {
+    return document.getElementById(element);
+}
+var timeId = window.setInterval(function () {
+    console.log("yiwen");
+},1000);
+my$("btn").onclick=function () {
+    window.clearInterval(timeId);
+}
+</script>
+</body>
+</html>

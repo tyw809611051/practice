@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: black;
+            position: relative;
+        }
+        span {
+            font-size: 30px;
+            color: yellow;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<input type="button" id="btn" value="摇起来">
+<div id="dv">
+
+</div>
+<script>
+function my$(element) {
+    return document.getElementById(element);
+}
+my$("btn").onclick=function () {
+    timeId = setInterval(function () {
+        var x=parseInt(Math.random()*101);
+        var y=parseInt(Math.random()*101);
+        //创建星星
+        my$("dv").innerHTML="<span>☆</span>"
+        my$("dv").firstElementChild.style.left=x+"px";
+        my$("dv").firstElementChild.style.top=y+"px";
+    },1000);
+
+}
+</script>
+</body>
+</html>
