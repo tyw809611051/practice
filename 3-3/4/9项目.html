@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 450px;
+            margin: 200px auto;
+        }
+
+        #txt {
+            width: 350px;
+        }
+
+        #pop {
+            width: 350px;
+            border: 1px solid red;
+        }
+
+        #pop ul {
+            margin: 10px;
+            padding: 0px;
+            width: 200px;
+            list-style-type: none;
+
+        }
+
+        #pop ul li {
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">
+    <input type="text" id="txt" value="">
+    <input type="button" value="搜索" id="btn">
+
+</div>
+
+
+<script>
+function my$(element) {
+    return document.getElementById(element);
+}
+
+var arr = ["哈哈哈","唐十多个","dfgsdfgdf","dfergbodfg"];
+my$("txt").onkeyup=function () {
+    if (my$("dv")) {
+        my$("box").removeChild(my$("dv"));
+    }
+    var val = this.value;
+    var tempArr = [];
+    for (var i=0;i<arr.length;i++) {
+        if (arr[i].indexOf(val) === 0 && val !== "") {
+            tempArr.push(arr[i]);
+        }
+    }
+    //判断temparr和输入框中数据为0，则清除div
+    if (val.length === 0 || tempArr.length === 0) {
+        if (my$("dv")) {
+            my$("box").removeChild(my$("dv"));
+        }
+        return ;
+    }
+
+    //否则生成
+    var dvObj = document.createElement("div");
+    dvObj.style.border = "1px solid green";
+    dvObj.style.width = "350px";
+    dvObj.id="dv";
+    my$("box").appendChild(dvObj);
+    //循环将内容追加到div中
+    for (var j=0;j<tempArr.length;j++) {
+        var pObj = document.createElement("p");
+        pObj.innerText=tempArr[j];
+        pObj.margin=0;
+        pObj.padding=0;
+        dvObj.appendChild(pObj);
+    }
+    console.log(tempArr);
+}
+
+</script>
+</body>
+</html>
