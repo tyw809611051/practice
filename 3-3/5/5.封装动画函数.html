@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         #dv {
+            margin-top: 30px;
             width: 100px;
             height: 100px;
             background-color: deeppink;
-            border-radius: 30%;
+            position: absolute;
         }
     </style>
 </head>
 <body>
+<input type="button" id="btn1" value="移动到400px">
+<input type="button" id="btn2" value="移动到800px">
 <div id="dv"></div>
-<input type="button" id="btn" value="变宽">
 <script>
-document.getElementById("btn").onclick=function () {
-  var width1=200;
-  var timeId = setInterval(function () {
-      width1 +=10;
-      document.getElementById("dv").style.width= width1+"px";
-      if (width1 >=800) {
-          clearInterval(timeId);
-      }
-  },1000);
-};
+    document.getElementById("btn1").onclick = function () {
+        moveTo(document.getElementById("dv"), 400);
+    };
+    document.getElementById("btn2").onclick = function () {
+        moveTo(document.getElementById("dv"), 800);
+    };
+
+    function moveTo(element, target) {
+        clearInterval(element.timeId);
+        console.log(element.timeId);
+        // if (!element.timeId) {
+        element.timeId = setInterval(function () {
+            console.log(element.timeId);
+            // 获取div当前位置
+            var current = element.offsetLeft;
+            // 每次运动步数
+            var step = 9;
+            // 与目标对比前进还是后退
+            step = current < target ? step : -step;
+            current += step;
+            //如果当前与现在的绝对值相比大于步数
+            if (Math.abs(target - current) > Math.abs(step)) {
+                element.style.left = current + "px";
+            } else {
+                clearInterval(element.timeId);
+
+                element.style.left = target + "px";
+            }
+        }, 100);
+        // }
+
+    }
 </script>
 </body>
 </html>
