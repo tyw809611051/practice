@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #dv {
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+<div id="dv"></div>
+<input type="button" id="btn" value="渐变">
+<script>
+document.getElementById("btn").onclick=function () {
+  var opcity = 10;
+  var timeId = setInterval(function () {
+      opcity--;
+      document.getElementById("dv").style.opacity=opcity/10;
+      if (opcity <=0) {
+          clearInterval(timeId);
+      }
+
+  },1000);
+
+
+};
+</script>
+</body>
+</html>

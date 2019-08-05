@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea name="texta" id="" cols="30" rows="10">
+    wahaha
+</textarea>
+<input type="button" value="仔细阅读(5)" id="btn" disabled="disabled">
+<script>
+    var timeAll = 5;
+    var timeId = setInterval(function () {
+        timeAll--;
+        document.getElementById("btn").value = "仔细阅读("+timeAll+")";
+        if (timeAll <=0) {
+            clearInterval(timeId);
+            document.getElementById("btn").disabled=false;
+            document.getElementById("btn").value = "同意";
+        }
+    },1000);
+</script>
+</body>
+</html>

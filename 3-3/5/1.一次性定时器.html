@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="停下" id="btn">
+<script>
+    var timeId = window.setTimeout(function () {
+        alert("haha");
+    },1000);
+    document.getElementById("btn").onclick = function () {
+        window.clearTimeout(timeId);
+    };
+</script>
+</body>
+</html>
