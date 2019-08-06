@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        /*取消图片底部3像素距离*/
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: pink;
+            border: 1px solid red;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box ul li {
+            float: left;
+        }
+
+        .box ul {
+            width: 1500px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        img {
+            width:300px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="screen">
+    <ul>
+        <li><img src="../images/1.jpg" alt=""/></li>
+        <li><img src="../images/2.jpg" alt=""/></li>
+        <li><img src="../images/3.jpg" alt=""/></li>
+        <li><img src="../images/4.jpg" alt=""/></li>
+        <li><img src="../images/1.jpg" alt=""/></li>
+    </ul>
+</div>
+
+
+<script>
+    var boxObj = document.getElementById("screen");
+    var ulObj = boxObj.children[0];
+    var current = 0;
+    // 设置定时器改变ulleft
+    var timeId = setInterval(f1,20);
+
+    // 增加鼠标移入移出事件
+    boxObj.onmouseover = function () {
+      clearInterval(timeId);
+    };
+    boxObj.onmouseout = function () {
+      timeId = setInterval(f1,20);
+    };
+
+    function f1() {
+        current -= 10;
+        if (current >= -1200) {
+            ulObj.style.left = current + "px";
+        } else {
+            current = 0;
+        }
+    }
+    function moveTo(element, target) {
+        clearInterval(element.timeId);
+        // if (!element.timeId) {
+        // alert(target);
+        element.timeId = setInterval(function () {
+            // 获取div当前位置
+            var current = element.offsetLeft;
+            // 每次运动步数
+            var step = 9;
+            // 与目标对比前进还是后退
+            step = current < target ? step : -step;
+            current += step;
+            //如果当前与现在的绝对值相比大于步数
+            if (Math.abs(target - current) > Math.abs(step)) {
+                element.style.left = current + "px";
+            } else {
+                clearInterval(element.timeId);
+                element.style.left = target + "px";
+            }
+        }, 20);
+        // }
+
+    }
+</script>
+</body>
+</html>
