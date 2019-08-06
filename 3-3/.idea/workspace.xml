@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd892d7-71e4-4c43-8434-67f85334eb58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5/6.轮播图.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5/7左右焦点.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/5/1.一次性定时器.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/5/3.div渐变.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -55,20 +55,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5/5.封装动画函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-              <folding>
-                <element signature="e#743#1556#0" />
-              </folding>
+            <state relative-caret-position="640">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5/6.轮播图.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-421">
+              <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5/6.轮播图.html">
+        <entry file="file://$PROJECT_DIR$/5/7左右焦点.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="70" selection-end-column="9" />
+            <state relative-caret-position="380">
+              <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+              <folding>
+                <element signature="e#2412#2416#1" expanded="true" />
+                <element signature="e#2440#2444#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +128,7 @@
         <option value="$PROJECT_DIR$/5/4.div变宽.html" />
         <option value="$PROJECT_DIR$/5/5.封装动画函数.html" />
         <option value="$PROJECT_DIR$/5/6.轮播图.html" />
+        <option value="$PROJECT_DIR$/5/7左右焦点.html" />
       </list>
     </option>
   </component>
@@ -199,12 +210,13 @@
       <updated>1564625053890</updated>
       <workItem from="1564625056288" duration="15248000" />
       <workItem from="1564711633746" duration="9446000" />
-      <workItem from="1564973255062" duration="10106000" />
+      <workItem from="1564973255062" duration="10206000" />
+      <workItem from="1565057702945" duration="1560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34800000" />
+    <option name="totallyTimeSpent" value="36460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -222,7 +234,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -380,10 +392,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/5/1.一次性定时器.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -397,7 +412,7 @@
     <entry file="file://$PROJECT_DIR$/5/3.div渐变.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -408,23 +423,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/5/5.封装动画函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
-          <folding>
-            <element signature="e#743#1556#0" />
-          </folding>
+        <state relative-caret-position="640">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5/6.轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="70" selection-end-column="9" />
+        <state relative-caret-position="-421">
+          <caret line="76" column="32" lean-forward="true" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/7左右焦点.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
+          <folding>
+            <element signature="e#2412#2416#1" expanded="true" />
+            <element signature="e#2440#2444#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
