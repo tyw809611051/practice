@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 1000px;
+            margin-top: 10px;
+
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="top" id="topPart">
+    <img src="../images-6/top.png" alt=""/>
+</div>
+<div class="nav" id="navBar">
+    <img src="../images-6/nav.png" alt=""/>
+</div>
+<div class="main" id="mainPart">
+    <img src="../images-6/main.png" alt=""/>
+</div>
+
+<script>
+    function getScroll() {
+        return {
+            left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+            top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0,
+        };
+    }
+    // window添加窗口事件
+    window.onscroll = function () {
+        if (getScroll().top >= document.getElementById("topPart").offsetHeight) {
+            document.getElementById("navBar").className = "nav fixed";
+            document.getElementById("mainPart").style.marginTop = document.getElementById("navBar").offsetHeight + "px";
+        } else {
+            document.getElementById("navBar").className = "nav";
+            document.getElementById("mainPart").style.marginTop = "10px";
+        }
+
+    };
+</script>
+</body>
+</html>

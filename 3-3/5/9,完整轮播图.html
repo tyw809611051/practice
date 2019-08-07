@@ -125,10 +125,10 @@
     // 全局变量
     var pic = 0;
     // 创建小按钮
-    for (var i = 0; i< liObj.length;i++) {
+    for (var i = 0; i < liObj.length; i++) {
         var buttonLi = document.createElement("li");
         buttonLi.innerHTML = i + 1;
-        buttonLi.setAttribute("index",i);
+        buttonLi.setAttribute("index", i);
         olObj.appendChild(buttonLi);
     }
 
@@ -137,69 +137,71 @@
 
     //增加鼠标移入移出事件
     var oliObjs = olObj.children;
-    for (var j=0;j<oliObjs.length;j++) {
+    for (var j = 0; j < oliObjs.length; j++) {
 
         oliObjs[j].onmouseover = function () {
-            for (var k=0;k<oliObjs.length;k++) {
+            for (var k = 0; k < oliObjs.length; k++) {
                 oliObjs[k].removeAttribute("class");
             }
             this.className = "current";
             // 获取鼠标进入的li的当前索引值
             pic = this.getAttribute("index");
             // 移动ul
-            moveTo(ulObj,-pic * imgWidth);
+            moveTo(ulObj, -pic * imgWidth);
         };
     }
-
 
     //克隆一个ul中第一个li，加入到ul的最后
     ulObj.appendChild(ulObj.children[0].cloneNode(true));
 
     // 自动播放
-    var timeId= setInterval(clickHandle,1000);
+    var timeId = setInterval(clickHandle, 1000);
     // 鼠标进入到box的div显示左右焦点的div
     boxObj.onmouseover = function () {
-      arrObj.style.display = "block";
-      //鼠标进入废掉之前的定时器
+        arrObj.style.display = "block";
+        //鼠标进入废掉之前的定时器
         clearInterval(timeId);
     };
     boxObj.onmouseout = function () {
         arrObj.style.display = "none";
         //鼠标离开自动播放
-        timeId= setInterval(clickHandle,1000);
+        timeId = setInterval(clickHandle, 1000);
     };
 
     document.getElementById("right").onclick = clickHandle;
+
     function clickHandle() {
-        if (pic === liObj.length-1) {
+        if (pic === liObj.length - 1) {
             pic = 0;
             ulObj.style.left = 0 + "px";
         }
         pic++;
-        moveTo(ulObj,-pic * imgWidth);
-        if (pic === liObj.length -1) {
-            olObj.children[oliObjs.length-1].className="";
-            olObj.children[0].className="current";
+        moveTo(ulObj, -pic * imgWidth);
+        if (pic === liObj.length - 1) {
+            olObj.children[oliObjs.length - 1].className = "";
+            olObj.children[0].className = "current";
         } else {
-            for (var i = 0;i<olObj.children.length;i++) {
+            for (var i = 0; i < olObj.children.length; i++) {
                 olObj.children[i].removeAttribute("class");
             }
-            olObj.children[pic].className="current";
+            olObj.children[pic].className = "current";
         }
     }
+
     // 左边按钮
     document.getElementById("left").onclick = function () {
-      if (pic === 0) {
-          pic = 5;
-          ulObj.style.left = -pic * imgWidth + "px";
-      }
-      pic--;
-      moveTo(ulObj,-pic * imgWidth);
-      for (var i=0;i<olObj.children.length;i++) {
-          olObj.clientHeight[i].removeAttribute("class");
-      }
-      olObj.children[pic].className = "current";
+        if (pic === 0) {
+            pic = 5;
+            ulObj.style.left = -pic * imgWidth + "px";
+        }
+        pic--;
+        moveTo(ulObj, -pic * imgWidth);
+        for (var i = 0; i < olObj.children.length; i++) {
+            olObj.clientHeight[i].removeAttribute("class");
+        }
+        olObj.children[pic].className = "current";
     };
+
     function moveTo(element, target) {
         clearInterval(element.timeId);
         // if (!element.timeId) {
