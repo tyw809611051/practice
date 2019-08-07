@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<input type="button"  value="变身" id="btn">
+<div id="dv"></div>
+<script>
+    document.getElementById("btn").onclick=function () {
+      moveTo(document.getElementById("dv"),{"width": 300,"height": 100,"left":200,"top":80});
+    };
+    function getStyle(element,attr) {
+        return window.getComputedStyle ? window.getComputedStyle(element,null)[attr] : element.currentStyle[attr];
+    }
+    function moveTo(element,json) {
+        clearInterval(element.timeId);
+        element.timeId = setInterval(function () {
+            var flag = true;
+            //循环遍历
+            for (var attr in json) {
+                // 当前属性位置
+                var current = parseInt(getStyle(element,attr));
+                // 设置步数
+                var target = json[attr];
+                var step = (target-current) / 10;
+                step = step > 0 ? Math.ceil(step) : Math.floor(step);
+                current += step;
+                element.style[attr] = current + "px";
+                // 判断是否全部到达目标位置
+                if (target !== current) {
+                    flag = false;
+                }
+            }
+
+            if (flag) {
+                clearInterval(element.timeId);
+            }
+        },20);
+    }
+</script>
+</body>
+</html>

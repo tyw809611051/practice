@@ -28,21 +28,25 @@
 <div id="dv"></div>
 <script>
     document.getElementById("btn1").onclick=function () {
-      moveTo(document.getElementById("dv"),400);
+      moveTo(document.getElementById("dv"),"left",400);
     };
     document.getElementById("btn2").onclick=function () {
-      moveTo(document.getElementById("dv"),800);
+      moveTo(document.getElementById("dv"),"left",800);
     };
-    function moveTo(element,target) {
+    function getStyle(element,attr) {
+        return window.getComputedStyle ? window.getComputedStyle(element,null)[attr] : element.currentStyle[attr];
+    }
+    function moveTo(element,attr,target) {
         clearInterval(element.timeId);
         element.timeId = setInterval(function () {
             // 获取div当前位置
-            var current = element.offsetLeft;
+            var current = parseInt(getStyle(element,attr));
+            console.log(current);
             // 移动步数
             var step = (target-current) / 10;
             step = step > 0 ? Math.ceil(step) : Math.floor(step);
             current += step;
-            element.style.left = current + "px";
+            element.style[attr] = current + "px";
             if (current === target) {
                 clearInterval(element.timeId);
             }
