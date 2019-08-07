@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            margin-top: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #cli_dialog_div {
+            margin-top: 1000px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="移动到400px" id="btn1">
+<input type="button" value="移动到800px" id="btn2">
+<div id="dv"></div>
+<script>
+    document.getElementById("btn1").onclick=function () {
+      moveTo(document.getElementById("dv"),400);
+    };
+    document.getElementById("btn2").onclick=function () {
+      moveTo(document.getElementById("dv"),800);
+    };
+    function moveTo(element,target) {
+        clearInterval(element.timeId);
+        element.timeId = setInterval(function () {
+            // 获取div当前位置
+            var current = element.offsetLeft;
+            // 移动步数
+            var step = (target-current) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            current += step;
+            element.style.left = current + "px";
+            if (current === target) {
+                clearInterval(element.timeId);
+            }
+        },20);
+    }
+</script>
+</body>
+</html>
