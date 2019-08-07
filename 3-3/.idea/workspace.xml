@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd892d7-71e4-4c43-8434-67f85334eb58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/6/3.动画函数封装.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6/4.精斗云.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +34,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6/3.动画函数封装.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="388">
-              <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="e#626#642#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/6/4.精斗云.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+              <folding>
+                <element signature="e#1988#2480#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,6 +110,7 @@
         <option value="$PROJECT_DIR$/6/1.div滚动事件.html" />
         <option value="$PROJECT_DIR$/6/2.固定导航栏.html" />
         <option value="$PROJECT_DIR$/6/3.动画函数封装.html" />
+        <option value="$PROJECT_DIR$/6/4.精斗云.html" />
       </list>
     </option>
   </component>
@@ -177,12 +194,12 @@
       <workItem from="1564711633746" duration="9446000" />
       <workItem from="1564973255062" duration="10206000" />
       <workItem from="1565057702945" duration="12506000" />
-      <workItem from="1565154987967" duration="3809000" />
+      <workItem from="1565154987967" duration="4969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51215000" />
+    <option name="totallyTimeSpent" value="52375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -441,7 +458,20 @@
     <entry file="file://$PROJECT_DIR$/6/3.动画函数封装.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#626#642#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6/4.精斗云.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="e#1988#2480#0" />
+          </folding>
         </state>
       </provider>
     </entry>

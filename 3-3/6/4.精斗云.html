@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        ul {
+            list-style: none
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        .nav {
+            width: 800px;
+            height: 42px;
+            margin: 100px auto;
+            background: url(../images-6/rss.png) right center no-repeat;
+            background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .nav li {
+            width: 83px;
+            height: 42px;
+            text-align: center;
+            line-height: 42px;
+            float: left;
+            cursor: pointer;
+        }
+
+        .nav span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 83px;
+            height: 42px;
+            background: url(../images-6/cloud.gif) no-repeat;
+        }
+
+        ul {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <span id="cloud"></span>
+    <ul id="navBar">
+        <li>北京校区</li>
+        <li>上海校区</li>
+        <li>广州校区</li>
+        <li>深圳校区</li>
+        <li>武汉校区</li>
+        <li>关于我们</li>
+        <li>联系我们</li>
+        <li>招贤纳士</li>
+    </ul>
+</div>
+<script>
+    // 获取标签
+    var cloud = document.getElementById("cloud");
+    var liObjs = document.getElementById("navBar").children;
+
+    for (var i = 0;i<liObjs.length;i++) {
+        // 注册事件
+        liObjs[i].onmouseover = mouseoverHandle;
+        liObjs[i].onclick = clickHandle;
+        liObjs[i].onmouseout = mouseoutHandle;
+    }
+
+    function mouseoverHandle() {
+        //移动到目标位置
+        moveTo(cloud,this.offsetLeft);
+    }
+
+    var currentPosition = 0;
+    function clickHandle() {
+        currentPosition = this.offsetLeft;
+    }
+
+    function mouseoutHandle() {
+        moveTo(cloud,currentPosition);
+    }
+
+    function moveTo(element,target) {
+        clearInterval(element.timeId);
+        element.timeId = setInterval(function () {
+            // 获取div当前位置
+            var current = element.offsetLeft;
+            // 移动步数
+            var step = (target-current) / 10;
+            step = step > 0 ? Math.ceil(step) : Math.floor(step);
+            current += step;
+            element.style.left = current + "px";
+            if (current === target) {
+                clearInterval(element.timeId);
+            }
+        },20);
+    }
+</script>
+
+</body>
+</html>
