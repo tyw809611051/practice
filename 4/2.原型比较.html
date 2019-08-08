@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(name,age,sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
+    Student.prototype = {
+        constructor : Student,
+        height : 188,
+        weight : "55kg",
+        eat : function () {
+          console.log("chifangl");
+        },
+        study: function () {
+            alert(1);
+        }
+    }
+    var stu = new Student("tang",15,"nan");
+    console.log(stu.height);
+    stu.study();
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .map {
+            width: 800px;
+            height: 600px;
+            background-color: gray;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="map"></div>
+<script>
+    //产生随机数对象
+    (function (window) {
+        function Random() {
+
+        }
+
+        var num = 0;
+        Random.prototype.getRandom = function (min,max) {
+            num =  Math.floor(Math.random()*(max-min)+min);
+            return num;
+        };
+        window.Random = new Random();
+    })(window);
+    //小方块对象
+    (function (window) {
+        var map = document.querySelector(".map");
+        function Food(width,height,color) {
+            this.width = width;
+            this.height = height;
+            this.color = color;
+            this.x = 0;
+            this.y = 0;
+            this.element = document.createElement("div");
+        }
+
+        Food.prototype.init = function (map) {
+            var div = this.element;
+            div.style.width = this.width + "px";
+            div.style.height = this.height + "px";
+            div.style.backgroundColor = this.color;
+            div.style.position = "absolute";
+            map.appendChild(div);
+            this.render(map)
+        };
+
+        Food.prototype.render = function (map) {
+            var x = Random.getRandom(0,map.offsetWidth/this.width)*this.width;
+            var y = Random.getRandom(0,map.offsetHeight/this.height)*this.height;
+            this.x = x;
+            this.y = y;
+            var div = this.element;
+            div.style.left = this.x + "px";
+            div.style.top = this.y + "px";
+        };
+
+        var f = new Food(20,20,"green");
+        f.init(map);
+        console.log(f.x+"===="+f.y);
+    })(window);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function f1() {
+        console.log("hahha");
+    }
+    // (function (win) {
+    //     var num = 10;
+    //     win.num = 10;
+    // })(window);
+    // console.log(num);
+
+    (function (window) {
+        function Random() {
+
+        }
+
+        var num = 0;
+        Random.prototype.getRandom = function (max,min) {
+            num = Math.floor(Math.random()*(max-min)+min);
+            return num;
+        };
+        window.Random = Random;
+    })(window);
+
+    var rm =new Random();
+    console.log(rm.getRandom(5,0));
+</script>
+</body>
+</html>
