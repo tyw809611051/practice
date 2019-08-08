@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cd892d7-71e4-4c43-8434-67f85334eb58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/6/7.client系列.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7.拖拽对话框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/7/1.放大镜.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7/2.滚动条.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -72,11 +70,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7/1.放大镜.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
               <caret line="93" column="51" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/7/2.滚动条.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="126" column="40" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="40" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,6 +170,7 @@
         <option value="$PROJECT_DIR$/6/7.client系列.html" />
         <option value="$PROJECT_DIR$/7.拖拽对话框.html" />
         <option value="$PROJECT_DIR$/7/1.放大镜.html" />
+        <option value="$PROJECT_DIR$/7/2.滚动条.html" />
       </list>
     </option>
   </component>
@@ -238,12 +249,12 @@
       <workItem from="1564711633746" duration="9446000" />
       <workItem from="1564973255062" duration="10206000" />
       <workItem from="1565057702945" duration="12506000" />
-      <workItem from="1565154987967" duration="15756000" />
+      <workItem from="1565154987967" duration="19313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63162000" />
+    <option name="totallyTimeSpent" value="66719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -261,7 +272,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4978308" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4978308" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -548,6 +559,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="93" column="51" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7/2.滚动条.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="126" column="40" selection-start-line="126" selection-start-column="26" selection-end-line="126" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
