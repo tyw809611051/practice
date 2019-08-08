@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 10px;
+            height: 20px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<input type="button" id="btn" value="点击">
+<div id="dv"></div>
+<script>
+function ChangeStyle(btn,dv,json) {
+    this.btn = btn;
+    this.dv = dv;
+    this.json = json;
+}
+ChangeStyle.prototype.init = function () {
+  var that = this;
+  this.btn.onclick = function () {
+
+      for (var attr in that.json) {
+          that.dv.style[attr] = that.json[attr] + "px";
+      }
+  };
+};
+var json = {"width":300,"height":200};
+var cs = new ChangeStyle(document.getElementById("btn"),document.getElementById("dv"),json);
+cs.init();
+</script>
+</body>
+</html>
