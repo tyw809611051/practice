@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(name, age, sex, weight) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.weight = weight;
+    }
+
+    Person.prototype.sayHi = function () {
+      console.log("good");
+    };
+
+    function Student(name,age,sex,weight,score) {
+        Person.call(this,name,age,sex,weight);
+        this.score = score;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Animal(name,weight) {
+        this.name = name;
+        this.weight = weight;
+    }
+
+    Animal.prototype.eat = function () {
+        console.log("everyday want to eat!");
+    }
+
+    function Dog(color) {
+        this.color = color;
+    }
+    Dog.prototype = new Animal("yiwen","60kg");
+    Dog.prototype.bitePersion = function () {
+      console.log("bite you !");
+    };
+
+    function ErHa(sex) {
+        this.sex = sex;
+    }
+
+    ErHa.prototype = new Dog("white");
+    ErHa.prototype.playHost = function () {
+      console.log("哈哈");
+    };
+
+    var erha = new ErHa("girl");
+    console.log(erha.sex,erha.color,erha.name);
+</script>
+</body>
+</html>
