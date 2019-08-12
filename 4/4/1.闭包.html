@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getValue() {
+        var value = 2;
+        return function () {
+            console.log(value++)
+        }
+    }
+
+    var f1 = getValue();
+    f1();
+    f1();
+    f1();
+</script>
+</body>
+</html>
