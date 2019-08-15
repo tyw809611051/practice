@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // =>0 初始化，请求代理对象
+    var xhr = new XMLHttpRequest();
+
+    // => 1 open方法已经调用
+    xhr.open('GET', './time.php');
+    xhr.send();
+
+    xhr.onreadystatechange = function () {
+        // if (this.readyState !== 4) {
+        //     return ;
+        // }
+        switch (this.readyState) {
+            case 2:
+                // => 2 已经接受到了响应报文
+                console.log(this.getAllResponseHeaders());
+                console.log(this.readyState);
+                break;
+            case 3:
+                // => 3 z正在下载响应报文的响应体，下载中，可能响应体为空/不完整
+                console.log(this.readyState);
+                break;
+            case 4:
+                console.log(this.readyState);
+                break;
+        }
+        // console.log(this.responseText);
+    };
+</script>
+</body>
+</html>
