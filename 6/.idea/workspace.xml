@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54dc886-ba54-4cbb-bdf7-1f1060fc0222" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1/2.下拉.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/1.ajax-basic.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/2.onload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2/time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/3.ajax-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/4.async.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/1.ajax-basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/2/1.ajax-basic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2/time.php" beforeDir="false" afterPath="$PROJECT_DIR$/2/time.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,17 +42,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2/1.ajax-basic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="347">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/2/4.async.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2/2.onload.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="120">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -69,8 +78,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/2/time.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="80">
+              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/2/3.ajax-get.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -92,16 +119,19 @@
       <list>
         <option value="$PROJECT_DIR$/1/1.体验.html" />
         <option value="$PROJECT_DIR$/1/2.下拉.html" />
-        <option value="$PROJECT_DIR$/2/time.php" />
-        <option value="$PROJECT_DIR$/2/1.ajax-basic.html" />
         <option value="$PROJECT_DIR$/2/add.php" />
         <option value="$PROJECT_DIR$/2/2.onload.html" />
+        <option value="$PROJECT_DIR$/2/1.ajax-basic.html" />
+        <option value="$PROJECT_DIR$/2/time.php" />
+        <option value="$PROJECT_DIR$/2/user.php" />
+        <option value="$PROJECT_DIR$/2/3.ajax-get.html" />
+        <option value="$PROJECT_DIR$/2/4.async.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1643" />
-    <option name="y" value="55" />
+    <option name="x" value="1393" />
+    <option name="y" value="187" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -136,9 +166,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/wamp64/www/cadms-client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Review\1-FrontData\practice\6\2" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -166,12 +202,12 @@
       <workItem from="1565656698204" duration="740000" />
       <workItem from="1565687624777" duration="752000" />
       <workItem from="1565740492112" duration="599000" />
-      <workItem from="1565831989754" duration="4586000" />
+      <workItem from="1565831989754" duration="13415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9952000" />
+    <option name="totallyTimeSpent" value="18781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -217,24 +253,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2/time.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
           <caret line="16879" column="4" selection-start-line="16879" selection-start-column="4" selection-end-line="16879" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/1.ajax-basic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -247,8 +269,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/2/2.onload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="120">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/time.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/3.ajax-get.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/1.ajax-basic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2/4.async.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>

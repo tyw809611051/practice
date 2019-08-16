@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="list">
+
+</ul>
+<script>
+    var listObj = document.getElementById("list");
+    var xhr = new XMLHttpRequest();
+
+    xhr.open('GET', './user.php');
+
+    xhr.setRequestHeader('access-token', 'Yiwen');
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send();
+
+    // 等同于readyState=4的时候
+    xhr.onload = function () {
+        // console.log(this.responseText);
+        var data = JSON.parse(this.responseText);
+        // console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            var liObj = document.createElement("li");
+            liObj.innerHTML = data[i]['name'];
+            liObj.setAttribute("id",data[i]['id']);
+            listObj.appendChild(liObj);
+            liObj.addEventListener('click',function () {
+                var liId = this.getAttribute("id");
+                console.log(liId);
+            });
+        }
+    };
+
+</script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <?php
 
-return time();
+echo time();
 
 ?>

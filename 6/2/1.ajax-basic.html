@@ -12,6 +12,8 @@
 
     // => 1 open方法已经调用
     xhr.open('GET', './time.php');
+    xhr.setRequestHeader('Access-Control-Allow-Origin','*');
+    xhr.setRequestHeader('Access-Control-Allow-Method','*');
     xhr.send();
 
     xhr.onreadystatechange = function () {
