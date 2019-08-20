@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    window.onload = function () {
+        var bindTabEvent = function (dom, callback) {
+            // 触摸开始
+            var isMove = false;
+            var startTime = 0;
+            dom.addEventListener('touchstart', function () {
+                //记录时间
+                startTime = Date.now();
+            });
+            dom.addEventListener('touchmove', function () {
+                isMove = true;
+            });
+            dom.addEventListener('touchend', function () {
+                if ((Date.now() - startTime) < 150 && !isMove) {
+                    callback && callback.call();
+                }
+                isMove = false;
+                startTime = 0;
+            });
+            dom.addEventListener('click', function () {
+
+            });
+        };
+
+        bindTabEvent(document.getElementById('box'), function () {
+            console.log("exec");
+        });
+    };
+
+
+</script>
+</body>
+</html>
