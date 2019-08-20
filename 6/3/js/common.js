@@ -39,7 +39,7 @@ var searchTop = function () {
 };
 
 var banner = function () {
-/*自动轮播且无缝*/
+    /*自动轮播且无缝*/
     /*点药随着图片的轮播改变*/
     /*滑动效果*/
     /*滑动结束的时候， 滑动距离不超过屏幕的1/3 返回去 否则切换*/
@@ -57,28 +57,28 @@ var banner = function () {
         imgBox.style.transition = 'all 0.2s';
         imgBox.style.webkitTransition = 'all 0.2s';
         // 位移动画效果
-        imgBox.style.transform = 'translateX('+(-index * bannerWidth)+'px)';
-        imgBox.style.webkitTransform = 'translateX('+(-index * bannerWidth)+'px)';
+        imgBox.style.transform = 'translateX(' + (-index * bannerWidth) + 'px)';
+        imgBox.style.webkitTransform = 'translateX(' + (-index * bannerWidth) + 'px)';
 
-    },1000);
+    }, 1000);
 
     // 最后一张动画做判断,是否定位到第一张
-    imgBox.addEventListener('transitionend',function () {
+    imgBox.addEventListener('transitionend', function () {
         if (index >= 9) {
             index = 1;
             imgBox.style.transition = "none";
-            imgBox.style.transform = 'translateX('+(-index * bannerWidth)+'px)';
-        } else if (index < 1){
+            imgBox.style.transform = 'translateX(' + (-index * bannerWidth) + 'px)';
+        } else if (index < 1) {
             index = 8;
             imgBox.style.transition = "none";
-            imgBox.style.transform = 'translateX('+(-index * bannerWidth)+'px)';
+            imgBox.style.transform = 'translateX(' + (-index * bannerWidth) + 'px)';
         }
 
         setPoint();
     });
 
     var setPoint = function () {
-        for (var i = 0;i < points.length; i++) {
+        for (var i = 0; i < points.length; i++) {
             var obj = points[i];
             obj.classList.remove('now');
 
@@ -89,12 +89,12 @@ var banner = function () {
     // 绑定事件
     var startX = 0;
     var distance = 0;
-    imgBox.addEventListener('touchstart',function (e) {
+    imgBox.addEventListener('touchstart', function (e) {
         clearInterval(timeId);
         startX = e.touches[0].clientX;
     });
 
-    imgBox.addEventListener('touchmove',function (e) {
+    imgBox.addEventListener('touchmove', function (e) {
         // 移动的距离
         var moveX = e.touches[0].clientX;
         distance = moveX - startX;
@@ -104,8 +104,8 @@ var banner = function () {
         setTranslateX(translateX);
     });
 
-    imgBox.addEventListener('touchend',function (e) {
-        if (Math.abs(distance) < bannerWidth/3) {
+    imgBox.addEventListener('touchend', function (e) {
+        if (Math.abs(distance) < bannerWidth / 3) {
             addTransition();
             setTranslateX(-index * bannerWidth);
         } else {
@@ -134,7 +134,25 @@ var banner = function () {
 };
 
 
-
 var downTime = function () {
+    var spansObj = document.querySelectorAll('.time span');
+    var time = 4 * 60 * 60;
+    var timeId = setInterval(function () {
+        time--;
+        var h = Math.floor(time / 3600);
+        var m = Math.floor(time % 3600 / 60);
+        var s = Math.floor(time % 60);
 
+        spansObj[0].innerHTML = Math.floor(h / 10);
+        spansObj[1].innerHTML = Math.floor(h % 10);
+
+        spansObj[3].innerHTML = Math.floor(m / 10);
+        spansObj[4].innerHTML = Math.floor(m % 10);
+
+        spansObj[6].innerHTML = Math.floor(s / 10);
+        spansObj[7].innerHTML = Math.floor(s % 10);
+        if (time <= 0) {
+            clearInterval(timeId);
+        }
+    }, 1000);
 };
