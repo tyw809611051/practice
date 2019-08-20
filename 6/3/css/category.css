@@ -1,0 +1,172 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+/*顶部通栏*/
+.jd_topBar {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #ccc;
+    background: url("../images/header-bg.png") 0 0 / 1px 44px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.jd_topBar .icon_back {
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    /*让背景从内容开始平铺*/
+    background-origin: content-box;
+    /*没有做背景裁剪 背景图默认就是从边框显示*/
+    /*默认的就是
+    border-box  边框以外被裁剪掉
+    padding-box 内边距以外被裁剪掉
+    content-box 内容以外被裁剪掉
+    */
+    background-clip: content-box;
+    /*background-color: pink;*/
+    left: 0;
+    background-position: -20px 0;
+}
+
+.jd_topBar .icon_menu {
+    width: 40px;
+    height: 44px;
+    padding: 12px 10px;
+    position: absolute;
+    top: 0;
+    /*让背景从内容开始平铺*/
+    background-origin: content-box;
+    /*没有做背景裁剪 背景图默认就是从边框显示*/
+    /*默认的就是
+    border-box  边框以外被裁剪掉
+    padding-box 内边距以外被裁剪掉
+    content-box 内容以外被裁剪掉
+    */
+    background-clip: content-box;
+    /*background-color: pink;*/
+    right: 0;
+    background-position: -60px 0;
+}
+
+.jd_topBar form {
+    width: 100%;
+    padding: 0 40px;
+}
+
+.jd_topBar form input{
+    /*display: block;*/
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border-radius: 3px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+}
+
+/*内容主体*/
+.jd_main {
+    width: 100%;
+    height: 100%;
+    padding-top: 45px;
+}
+
+/*左边栏*/
+.jd_cateLeft {
+    height: 100%;
+    width: 90px;
+    float: left;
+    overflow: hidden;
+}
+
+.jd_cateLeft ul {
+    width: 100%;
+}
+
+.jd_cateLeft ul li {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    background: #f3f4f5;
+}
+
+.jd_cateLeft ul li.now {
+    border-right: none;
+    background: #fff;
+}
+
+.jd_cateLeft ul li a {
+    display: block;
+    width: 100%;
+}
+
+.jd_cateLeft ul li.now a{
+    color: #d8505c;
+}
+
+/*右边栏*/
+.jd_cateRight {
+    height: 100%;
+    overflow: hidden;
+}
+
+.jd_cateRight .jd_cateRightBox {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.jd_cateRight .jd_cateRightBox .banner {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.jd_cateRight_box .banner img{
+    width: 100%;
+    display: block;
+}
+
+.jd_cateRightBox .hot {
+    margin-top: 10px;
+}
+
+.jd_cateRightBox .hot h3{
+    font-size: 12px;
+}
+
+.jd_cateRightBox .hot ul {
+    width: 100%;
+}
+
+.jd_cateRightBox .hot ul li {
+    float: left;
+    width: 33.333%;
+    padding-top: 5px;
+}
+
+.jd_cateRightBox .hot ul li a {
+    display: block;
+    width: 100%;
+}
+
+.jd_cateRightBox .hot ul li a img {
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.jd_cateRightBox .hot ul li a p {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+}
