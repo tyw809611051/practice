@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import "variable";
+
+@import "mixins";
+
+/*内置函数*/
+
+/*运算*/
+@num:5;
+ul{
+  width: 100%*@num;
+  li{
+    width: 100%/@num;
+    color: lighten(red,20%);
+  }
+}

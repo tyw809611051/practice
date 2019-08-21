@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*注释，在css中可以使用*/
+/*变量*/
+a:hover {
+  color: #e92322;
+}
+/*用于字符拼接使用的方法*/
+.box {
+  color: #e92322;
+}
+/*# sourceMappingURL=variable.css.map */

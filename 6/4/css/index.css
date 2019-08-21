@@ -1,0 +1,101 @@
+/*reset css*/
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+/*common css*/
+
+@font-face {
+    font-family: 'wjs';
+    src:
+    url(../fonts/MiFie-Web-Font.svg) format('svg'),
+    url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(../fonts/MiFie-Web-Font.woff) format('woff');
+}
+
+.wjs_icon {
+    font-family: wjs;
+}
+
+.wjs_icon_phone::before {
+    content: '\e908';
+}
+
+.wjs_icon_tel::before {
+    content: '\e909';
+}
+
+.wjs_topBar {
+    /*width: 100%;*/
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+}
+
+.wjs_topBar .container {
+
+}
+
+.wjs_topBar .container .row {
+
+}
+
+.wjs_topBar .container .row div {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.wjs_topBar .container .row div + div {
+}
+
+.wjs_topBar > .container > .row > div ~ div {
+    border-left: 1px solid #ccc;
+}
+
+.wjs_app img {
+    display: none;
+}
+
+.wjs_app:hover img {
+    display: block;
+    border: 1px solid #ccc;
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    margin-left: -60px;
+    border-top: none;
+}
+
+.btn-register {
+    background: #e92322;
+    color: #fff;
+    border: none;
+    padding: 3px 12px;
+    font-size: 12px;
+}
+
+.btn-login {
+    color: #666;
+    font-size: 12px;
+}
+
+.btn-login:hover {
+    color: #666;
+    text-decoration: none;
+}
