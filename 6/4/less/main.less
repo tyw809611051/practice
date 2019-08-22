@@ -7,10 +7,12 @@
 /*内置函数*/
 
 /*运算*/
+
 @num:5;
-ul{
+.ul{
   width: 100%*@num;
-  li{
+  color:#ccc;
+  &,&:hover li{
     width: 100%/@num;
     color: lighten(red,20%);
   }

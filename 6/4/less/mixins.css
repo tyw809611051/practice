@@ -24,4 +24,9 @@
 2.定义默认值和定义变量值是一样的
 3.定义了参数（有默认值），参数可传可不传
 */
+.test {
+  width: 50px;
+  float: left;
+  float: right;
+}
 /*# sourceMappingURL=mixins.css.map */
