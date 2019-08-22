@@ -1,37 +1,39 @@
-.sn_banner{
+.sn_banner {
   width: 100%;
   overflow: hidden;
   position: relative;
-  ul{
-    &:first-child{
+  ul {
+    &:first-child {
       width: 100%*10;
       transform: translateX(-100%/10);
       -webkit-transform: translateX(-100%/10);
-      li{
+      li {
         width: 100%/10;
         float: left;
-        a{
+        a {
           display: block;
           width: 100%;
-          img{
+          img {
             display: block;
             width: 100%;
           }
         }
       }
     }
-    &:last-child{
+    &:last-child {
       position: absolute;
-      right: 20rem/@baseFontSize;
       bottom: 20rem/@baseFontSize;
-      li{
-        margin-left: 12rem/@baseFontSize;
-        width: 12rem/@baseFontSize;
-        height: 12rem/@baseFontSize;
-        border-radius: 50%;
+      right: 200rem/@baseFontSize;
+      li {
         float: left;
         background: #fff;
-        &.now{
+        width: 12rem/@baseFontSize;
+        height: 12rem/@baseFontSize;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: 12rem/@baseFontSize;
+        &.now {
           background: @snColor;
         }
       }

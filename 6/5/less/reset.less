@@ -1,39 +1,46 @@
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  tap-highlight-color: transparent;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
-body{
+
+body {
   font-size: 14px;
   font-family: "Microsoft YaHei",sans-serif;
   color: #333;
 }
-ul,ol{
+
+ul,ol {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
-  color: #333;
 }
-input,textarea{
+
+input,textarea {
   border: none;
   outline: none;
   resize: none;
   -webkit-appearance: none;
 }
-.f_left{
+
+.f_left {
   float: left;
 }
-.f_right{
+
+.f_right {
   float: right;
 }
+
 .clearFix::before,
-.clearFix::after{
+.clearFix::after {
   content: "";
   display: block;
   visibility: hidden;
@@ -41,22 +48,27 @@ input,textarea{
   line-height: 0;
   clear: both;
 }
-.m_l10{
-  margin-left:10px;
+
+.m_l10 {
+  margin-left: 10px;
 }
-.m_r10{
-  margin-right:10px;
+
+.m_r10 {
+  margin-right: 10px;
 }
-.m_t10{
-  margin-top:10px;
+
+.m_t10 {
+  margin-top: 10px;
 }
-.m_b10{
-  margin-bottom:10px;
+
+.m_b10 {
+  margin-bottom: 10px;
 }
+
 /*版心*/
-.sn_container{
-  position: relative;
+.sn_container {
   width: 100%;
+  position: relative;
   max-width: 750px;
   min-width: 320px;
   margin: 0 auto;
