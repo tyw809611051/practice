@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/search.css">
+    <title>淘-搜索中心</title>
+</head>
+<body>
+
+<!--首页内容-->
+<div class="ct_container">
+    <header class="ct_header">
+        <a href="#" class="left">
+            <span class="fa fa-backward"></span>
+        </a>
+        <h3>搜索中心</h3>
+    </header>
+    <!--内容-->
+    <div class="ct_content">
+        <div class="ct_wrapper">
+            <!--搜索输入内容区域-->
+            <div class="ct_search">
+                <form action="#">
+                    <input type="search" placeholder="搜索商品">
+                </form>
+                <a href="javascript:;">搜索</a>
+            </div>
+            <!--搜索历史区域-->
+            <div class="ct_history"></div>
+        </div>
+    </div>
+    <!--底部标签-->
+    <footer class="ct_footer">
+        <a class="tab_home fa fa-home now" href="index.html"><span>首页</span></a>
+        <a class="tab_cate fa fa-bars" href="category.html"><span>分类</span></a>
+        <a class="tab_cart fa fa-shopping-cart" href="cart.html"><span>购物车</span></a>
+        <a class="tab_user fa fa-user" href="user/index.html"><span>会员中心</span></a>
+    </footer>
+</div>
+<script src="assets/mui/js/mui.min.js"></script>
+<script src="assets/zepto/zepto.min.js"></script>
+<script src="assets/artTemplate/template-native.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
