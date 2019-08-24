@@ -79,7 +79,7 @@ $(function () {
                 dataType: 'json',
                 success: function (data) {
                     if (data.success === true) {
-                        mui.confirm('添加成功,去购物车看看?','温馨提示',['是','否'],function () {
+                        mui.confirm('添加成功,去购物车看看?','温馨提示',['是','否'],function (e) {
                             if (e.index === 0) {
                                 location.href = CT.cartUrl;
                             }

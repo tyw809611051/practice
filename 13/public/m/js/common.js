@@ -20,6 +20,7 @@ $(function () {
     /*需要登录的ajax请求*/
     CT.loginUrl = '/m/user/login.html';
     CT.cartUrl = '/m/user/cart.html';
+    CT.userUrl = '/m/user/index.html';
     CT.loginAjax = function (params) {
       $.ajax({
           type: params.type || 'get',
@@ -38,4 +39,28 @@ $(function () {
           }
       });
     };
+
+    /*转换数据*/
+    CT.serialize2object = function (data) {
+        var obj = {};
+        if (data) {
+            var arr = data.split('&');
+            arr.forEach(function (item,i) {
+                var arrObj = item.split('=');
+                obj[arrObj[0]] = arrObj[1];
+            });
+        }
+
+        return obj;
+    };
+
+    CT.getItemById = function (data,id) {
+        var obj = null;
+        data.forEach(function (item,i) {
+           if (item.id == id) {
+               obj = item;
+           }
+        });
+        return obj;
+    }
 });
