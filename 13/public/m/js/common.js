@@ -16,4 +16,26 @@ $(function () {
         }
         return params;
     };
+
+    /*需要登录的ajax请求*/
+    CT.loginUrl = '/m/user/login.html';
+    CT.cartUrl = '/m/user/cart.html';
+    CT.loginAjax = function (params) {
+      $.ajax({
+          type: params.type || 'get',
+          url: params.url || '#',
+          data: params.data || '',
+          dataType: params.dataType || 'json',
+          success: function (data) {
+              if (data.error == 400) {
+                  location.href = CT.loginUrl+ '?returnUrl='+location.href;
+              } else {
+                  params.success && params.success(data);
+              }
+          },
+          error: function () {
+              mui.toast('服务器繁忙');
+          }
+      });
+    };
 });
