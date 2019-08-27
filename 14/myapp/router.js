@@ -79,14 +79,19 @@ router.post('/students/new', function (req, res) {
 });
 
 router.get('/students/edit', function (req, res) {
+    // req.setRequestHeader("Access-Control-Allow-Origin","*");
+    res.set({
+        "Access-Control-Allow-Origin":"*"
+    });
     Student.findById(parseInt(req.query.id), function (err, data) {
         if (err) {
             return res.status(500).send('Server error');
         }
 
-        res.render('edit.html', {
-            student: data
-        });
+        res.send(data);
+        // res.render('edit.html', {
+        //     student: data
+        // });
     })
 });
 
