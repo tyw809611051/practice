@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab96842c-1c1e-4f2d-a12e-e5eba5eeabb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ES5/1_严格模式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES5/2_json对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES5/3_1object扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES5/4_数组的扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES5/5_function扩展.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/1_let关键字.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/2_const关键字.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/3_变量的解构赋值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/4_模板字符串.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/5_简化的对象写法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/6_箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/7_3点运算符.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/8_形参默认值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES6/常用/9_Promise对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/1_字符串扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/2_数值扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/3_数组扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/4_对象扩展.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/5_深度克隆.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/6_Set和Map数据结构.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/其他/7_for_of循环.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/常用/10_Symbol.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/常用/11_iterator遍历器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/常用/12_Generator函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/常用/13_async函数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ES6/常用/14_class.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../6/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,57 +28,89 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/4_模板字符串.html">
+        <entry file="file://$PROJECT_DIR$/ES6/常用/12_Generator函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="185">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/5_简化的对象写法.html">
+        <entry file="file://$PROJECT_DIR$/ES6/常用/13_async函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="365">
+              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/6_箭头函数.html">
+        <entry file="file://$PROJECT_DIR$/ES6/常用/14_class.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="160">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/7_3点运算符.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/8_形参默认值.html">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/1_字符串扩展.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/2_数值扩展.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/3_数组扩展.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/4_对象扩展.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/5_深度克隆.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/6_Set和Map数据结构.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ES6/常用/9_Promise对象.html">
+        <entry file="file://$PROJECT_DIR$/ES6/其他/7_for_of循环.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+            <state relative-caret-position="280">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -114,6 +145,18 @@
         <option value="$PROJECT_DIR$/ES6/常用/7_3点运算符.html" />
         <option value="$PROJECT_DIR$/ES6/常用/8_形参默认值.html" />
         <option value="$PROJECT_DIR$/ES6/常用/9_Promise对象.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/10_Symbol.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/iterator遍历器.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/11_iterator遍历器.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/12_Generator函数.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/13_async函数.html" />
+        <option value="$PROJECT_DIR$/ES6/常用/14_class.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/2_数值扩展.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/3_数组扩展.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/4_对象扩展.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/6_Set和Map数据结构.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/1_字符串扩展.html" />
+        <option value="$PROJECT_DIR$/ES6/其他/7_for_of循环.html" />
       </list>
     </option>
   </component>
@@ -122,16 +165,6 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/15.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1481" />
@@ -147,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,24 +196,34 @@
               <item name="15" type="b2602c69:ProjectViewProjectNode" />
               <item name="15" type="462c0819:PsiDirectoryNode" />
               <item name="ES6" type="462c0819:PsiDirectoryNode" />
+              <item name="其他" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="15" type="b2602c69:ProjectViewProjectNode" />
+              <item name="15" type="462c0819:PsiDirectoryNode" />
+              <item name="ES6" type="462c0819:PsiDirectoryNode" />
               <item name="常用" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ES5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ES6/其他" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Review\1-FrontData\practice\15\ES6\其他" />
+      <recent name="F:\Review\1-FrontData\practice\15\ES6\常用" />
       <recent name="F:\Review\1-FrontData\practice\15\ES5" />
     </key>
   </component>
@@ -207,23 +249,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1566916624956</updated>
-      <workItem from="1566916627876" duration="8396000" />
+      <workItem from="1566916627876" duration="8464000" />
+      <workItem from="1566955087635" duration="9789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8396000" />
+    <option name="totallyTimeSpent" value="18253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1481" y="48" width="1382" height="813" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35267857" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3298969" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -231,6 +271,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -240,20 +284,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ES5/严格模式.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ES5/json对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ES5/严格模式.html" />
+    <entry file="file://$PROJECT_DIR$/ES5/json对象.html" />
     <entry file="file://$PROJECT_DIR$/ES5/1_严格模式.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -343,8 +375,95 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/常用/9_Promise对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="226">
           <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/iterator遍历器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/10_Symbol.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/11_iterator遍历器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/12_Generator函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/13_async函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/常用/14_class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/5_深度克隆.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/2_数值扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/3_数组扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/4_对象扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/6_Set和Map数据结构.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/1_字符串扩展.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/其他/7_for_of循环.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
