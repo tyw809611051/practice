@@ -9,11 +9,24 @@
 1. Function.prototype.bind(obj) :
     * 作用： 将函数内的this绑定为obj，并将函数返回
 
-2. 面试题： 区别bind（）与calll()和apply()?
+2. 面试题： 区别bind（）与call()和apply()?
     * 都能指定函数中的this
     * call()/apply()是立即调用函数
     * bind（）是将函数返回，通常是指定回调函数的调用
 
 -->
 </body>
+<script>
+    function Foo(name,age) {
+        this.name = name;
+        this.age = age;
+        console.log('yiwen');
+    }
+    let obj = {};
+    // let fo = new Foo('jia',18);
+    // Foo.bind(obj,'tang',12)();
+    // Foo.call(obj,'wang',19);
+    Foo.apply(obj,['han',20]);
+    console.log(obj.name);
+</script>
 </html>

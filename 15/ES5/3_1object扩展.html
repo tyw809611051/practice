@@ -21,4 +21,45 @@ Object.defineProperties(object, desc)
     * 存取器属性： setter，getter 一个用来存值，一个用来取值
 -->
 </body>
+<script>
+    let obj = {
+        name: 'yiwen',
+        age:18
+    };
+    let obj1 = {};
+    obj1 = Object.create(obj,{
+        sex : {
+            value : 'nv',
+            writable: true,
+            configurable : false,
+            enumerable : true
+        }
+    });
+    // console.log(obj1);
+    obj1.sex = "男";
+    obj1.name = 'tang';
+    // console.log(obj1);
+    // delete obj1.sex;
+    // console.log(obj);
+    for (let key in obj1) {
+        // console.log(key);
+    }
+
+    obj2 = Object.defineProperties(obj,{
+        fullName: {
+            get : function () {
+                return this.name + '-' + this.age;
+            },
+            set : function (val) {
+                let names = val.split('-');
+                this.name = names[0];
+                this.age = names[1];
+            }
+        }
+    });
+
+    console.log(obj2.fullName);
+    obj2.fullName = 'tang-19';
+    console.log(obj2.name);
+</script>
 </html>

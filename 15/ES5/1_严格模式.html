@@ -13,6 +13,18 @@
     * 4.创建eval作用域
     * 5.对象不能有重名的属性
     * */
+    // 'use strict';
+    let stu = 1;
+    function Foo(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Foo('yiwen',18);  //函数自调用
+    // new Foo('yiwen',17);
+    // setTimeout(function () {
+    //     console.log(this);
+    // },1000);
 </script>
 </body>
 </html>

@@ -12,7 +12,15 @@
     * json对象（数组）转换为js对象（数组）
 -->
 <script>
+let obj = {
+    name : 'yiwen',
+    age : 39
+};
 
+objStr = JSON.stringify(obj);
+console.log(objStr);
+Obj = JSON.parse(objStr);
+console.log(Obj);
 </script>
 </body>
 </html>

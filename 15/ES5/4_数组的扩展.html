@@ -14,4 +14,17 @@
 
 -->
 </body>
+
+<script>
+    let arr = [1,2,0,3,5,'',3];
+    let newArr1 = arr.filter(function (item,index) {
+        return index;
+    });
+    console.log(newArr1);
+    console.log(arr.indexOf(0));
+    console.log(arr.lastIndexOf(3));
+    arr.forEach(function (item,index) {
+       console.log(index +'--'+item);
+    });
+</script>
 </html>
