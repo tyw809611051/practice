@@ -38,4 +38,55 @@
     * 使用promise封装处理ajax请求
 -->
 </body>
+<script>
+// 创建一个promise实例对象
+//     let promise = new Promise((resolve,reject) => {
+//        console.log('111');
+//        setTimeout(function () {
+//            console.log('333');
+//            resolve('yiwen');
+//        },1000);
+//     });
+//
+//     console.log('222');
+// promise.then((data) => {
+//     console.log('succ' + data);
+// },error => {
+//     console.log('failed '+ error);
+// });
+
+function getStu(url) {
+    let promise = new Promise((resolve,reject) => {
+        let req = new XMLHttpRequest();
+        req.onreadystatechange = function () {
+            if (req.readyState === 4) {
+                if (req.status === 200) {
+                    let stu = req.response;
+                    resolve(stu);
+                } else {
+                    let sta = false;
+                    reject(sta);
+                }
+            }
+        };
+        req.responseType = 'json';
+        req.open('GET',url);
+        req.send();
+    });
+    return promise;
+}
+
+let a = getStu('http://localhost:3000/students').then(stu => {
+    console.log(stu);
+    let someStu = 'http://localhost:3000/students/edit?id='+ stu[0].id;
+    console.log(someStu);
+    return getStu(someStu);
+},statuss => {
+console.log(statuss);
+}).then(som => {
+    console.log(som);
+},stat => {
+
+});
+</script>
 </html>

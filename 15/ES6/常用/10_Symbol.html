@@ -28,4 +28,20 @@ Symbol:
             * 对象的symbol.iterator属性，指向该对象的默认遍历器方法
 -->
 </body>
+
+<script>
+    let symbol = Symbol();
+    console.log(typeof symbol);
+
+    let obj = {
+        username:'yiwen',
+        age : 39
+    }
+    obj[symbol] = 'hello';
+    obj[symbol] = 'jia';
+    console.log(obj);
+    for (let i in obj) {
+        console.log(i);
+    }
+</script>
 </html>

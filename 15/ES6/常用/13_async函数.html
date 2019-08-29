@@ -21,4 +21,32 @@ async函数
         4. 语意上更为明确，使用简单，
 -->
 </body>
+
+<script>
+    // async function timeout(ms) {
+    //     return new Promise(resolve => {
+    //         setTimeout(resolve,ms);
+    //     })
+    // }
+    //
+    // async function asyncPrint(value,ms) {
+    //     console.log('函数执行');
+    //     await timeout(ms);
+    //     console.log('延时时间');
+    //     console.log(value);
+    // }
+    //
+    // console.log(asyncPrint('hello async',2000));
+
+
+    async function awaitTest() {
+        let result = await Promise.resolve('执行成功');
+        console.log(result);
+        let result2 = await Promise.reject('执行失败');
+        console.log(result2);
+        let result3 = await Promise.resolve('还想执行一次');// 执行不了
+        console.log(result3);
+    }
+    awaitTest();
+</script>
 </html>

@@ -28,4 +28,23 @@
     arr2.push(...arr1);
 -->
 </body>
+<script>
+    function fun(...values) {
+        console.log(arguments);
+        // arguments.forEach(function (item,index) {
+        //     console.log(item,index);
+        // });
+        console.log('--------');
+        console.log(values);
+        values.forEach(function (item,index) {
+            console.log(item,index);
+        })
+    }
+
+    fun(1,2,3);
+
+    let arr1 = [1,3,5];
+    let arr2 = [2,...arr1,6];
+    console.log(arr2);
+</script>
 </html>

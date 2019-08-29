@@ -5,6 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<button id="btn">测试箭头函数this_1</button>
+<button id="btn2">测试箭头函数this_2</button>
 <!--
 * 作用： 定义匿名函数
 * 基本语法：
@@ -23,4 +25,47 @@
         如果没有，this就是window
 -->
 </body>
+<script>
+    let fun = function () {
+        console.log('fun()');
+    };
+    fun();
+
+    let fun1 = () => console.log('fun1()');
+    fun1();
+    console.log(fun1());
+    // 一个形参
+    let fun2 = x => x;
+    console.log(fun2(2));
+    // 2个或多个
+    let fun3 = (x, y) => x + y;
+    console.log(fun3(20,30));
+
+    //函数体有多条语句
+    let fun4 = (x,y) => {
+        console.log(x,y);
+        return x + y;
+    };
+    console.log(fun4(19,20));
+
+    setTimeout(() => {
+        console.log(this);
+    },1000);
+
+    let btn2 = document.getElementById('btn2');
+    let btn1 = document.getElementById('btn');
+    let obj = {
+        name: 'yiwen',
+        age:39,
+        getName : function() {
+            btn2.onclick = () => {
+                console.log(this);
+            }
+        }
+    };
+    btn1.onclick = () => {
+      console.log(this);
+    };
+    obj.getName();
+</script>
 </html>

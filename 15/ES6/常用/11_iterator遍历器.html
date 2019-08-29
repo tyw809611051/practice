@@ -26,4 +26,36 @@
 
 -->
 </body>
+
+<script>
+    function mockIterator(arr) {
+        let nextIndex = 0;
+        return {
+            next : function () {
+                return nextIndex < arr.length ? {value: arr[nextIndex++],done:false}:{value: undefined,done:true}
+            }
+        }
+    }
+
+    let arr = [1,2,3,4,5];
+    let iteratorObj = mockIterator(arr);
+    console.log(iteratorObj.next());
+    console.log(iteratorObj.next());
+
+    // 使用解构赋值，以及三点运算符会调用iterator接口
+    let arr1 = [1,2,3,4,5];
+    let [value1,...arr2] = arr1;
+    console.log(value1);
+    console.log(arr2);
+
+    console.log('=========');
+    // yield语句
+    function* generatorObj() {
+        yield 'yiwen';
+        yield 3;
+    }
+
+    let Go = generatorObj();
+    console.log(Go.next());
+</script>
 </html>
