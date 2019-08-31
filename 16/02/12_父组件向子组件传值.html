@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <script src="lib/vue-resource-1.3.4.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <com1 v-bind:parentmsg="msg"></com1>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            comName: 'login',
+            flag: true,
+            msg:'123父组件中的数据'
+        },
+        methods: {
+
+        },
+        components: {
+            com1:{
+                template:'<h3>子组件中的数据{{parentmsg}}</h3>',
+                props: ['parentmsg']
+            }
+        }
+    });
+</script>
+</body>
+</html>
