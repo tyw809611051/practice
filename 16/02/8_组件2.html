@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <script src="lib/vue-resource-1.3.4.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7.css">
+    <style>
+    </style>
+</head>
+<body>
+<div id="app">
+<mycom2></mycom2>
+</div>
+
+<template id="tmpl">
+    <div>
+        <h1>外部定义的解构</h1>
+    </div>
+</template>
+<script>
+    Vue.component('mycom2',{
+        template: '#tmpl'
+    });
+    var vm = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        methods: {
+
+        },
+        components: {
+            login: {
+                template:'<h1>私有组件</h1>'
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+<div id="app">
+    <h4>{{msg}}</h4>
+    <input type="text" value="" v-model="n1">
+
+    <select v-model="opt">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <input type="text" v-model="n2">
+    <input type="button" value="=" @click="calc">
+    <input type="text" v-model="result">
+
+    <ul>
+        <li v-for="(item, i) in list">索引： {{ i }} -- 姓名：{{item.name}}</li>
+    </ul>
+
+    <div v-for="(val, key, i) in userInfo">{{val}}---{{key}}---{{i}}</div>
+
+    <p v-for="i in 10">{{i}}</p>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: '猥琐发育,别浪~~!',
+            timeId: null,
+            n1: 0,
+            n2: 0,
+            result: 0,
+            opt: "+"
+        },
+        methods: {
+            calc() {
+                switch (this.opt) {
+                    case "+":
+                        this.result = parseInt(this.n1) + parseInt(this.n2);
+                        break;
+                    case "-":
+                        this.result = parseInt(this.n1) - parseInt(this.n2);
+                        break;
+                    case "*":
+                        this.result = parseInt(this.n1) * parseInt(this.n2);
+                        break;
+                    case "/":
+                        this.result = parseInt(this.n1) / parseInt(this.n2);
+                        break;
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>

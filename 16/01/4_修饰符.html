@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <style>
+        .inner {
+            height: 150px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div class="inner" @click="div1Handler">
+        <input type="button" value="戳它" @click.stop="btnHandler">
+    </div>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: '猥琐发育,别浪~~!',
+            timeId:null
+        },
+        methods: {
+            div1Handler() {
+                console.log('div时间')
+            }
+        }
+    });
+</script>
+</body>
+</html>

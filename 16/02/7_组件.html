@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <script src="lib/vue-resource-1.3.4.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7.css">
+    <style>
+    </style>
+</head>
+<body>
+<div id="app">
+<my-com1></my-com1>
+</div>
+<script>
+    // 1.使用extend来创建全局的vue组件
+    var com1 = Vue.extend({
+        template: '<h3>这是标签</h3>' // 通过template属性，指定了组件要展示的HTML解构
+    });
+    // 2.使用vue.component('组件名称',创建出来的组件模板对象);
+    Vue.component('myCom1',com1);
+    var vm = new Vue({
+        el: '#app',
+        data: {
+
+        },
+        methods: {
+
+        }
+    });
+</script>
+</body>
+</html>

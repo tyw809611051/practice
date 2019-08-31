@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="lib/vue-2.4.0.js"></script>
+    <script src="lib/vue-resource-1.3.4.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7.css">
+    <style>
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="get请求" class="btn btn-success" @click="getInfo">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">添加品牌</h3>
+        </div>
+        <div class="panel-body form-inline">
+            <label for="">
+                Id:
+                <input type="text" class="form-control" v-model="id">
+            </label>
+            <label for="">
+                Name:
+                <input type="text" class="form-control" v-model="name">
+            </label>
+
+            <input type="button" value="添加" class="btn btn-primary" @click="add()">
+            <label for="">
+                搜索关键字名称:
+                <input type="text" class="form-control" v-model="keywords">
+            </label>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Ctime</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="item in search(keywords)" :key="item.id">
+                <td>{{ item.id }}</td>
+                <td v-text="item.name"></td>
+                <td>{{ item.ctime | dataFormat}}</td>
+                <td>
+                    <a href="" @click.prevent="del(item.id)">删除</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    Vue.filter('dataFormat',function (dateStr) {
+       var dt = new Date(dateStr);
+
+       var y = dt.getFullYear();
+       var m = dt.getMonth();
+       var d = dt.getDate();
+
+       return `${y}-${m}-${d}`;
+    });
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            id: '',
+            name: '',
+            keywords: '',
+            list: [
+                {id:1,name:'奔驰',ctime:new Date()},
+                {id:2,name:'宝马',ctime:new Date()},
+            ]
+        },
+        methods: {
+            add() {
+                var car = {
+                    id : this.id,
+                    name: this.name,
+                    ctime: new Date()
+                };
+                this.list.push(car);
+                this.id = this.name = '';
+            },
+            del(id) {
+                var index = this.list.findIndex(item => {
+                    if (item.id == id) {
+                        return true;
+                    }
+                });
+                this.list.splice(index,1);
+            },
+            search(keywords) {
+                return this.list.filter(item => {
+                    if (item.name.includes(keywords)) {
+                        return item;
+                    }
+                });
+            },
+            getInfo() {
+                this.$http.get('http://www.cadms.com/report/preview?tid=1&wid=4&sid=47').then(function (result) {
+                    console.log(result);
+                })
+            }
+        },
+        beforeCreate() {
+
+        }
+    });
+</script>
+</body>
+</html>
