@@ -1,0 +1,38 @@
+{
+    "status":0,
+    "message": [
+        {
+            "id": 1,
+            "title": "Redmi K20",
+            "add_time":"2018-02-31",
+            "zhaiyao": "弹出全面屏，4800万三摄 ",
+            "click": 0,
+            "img_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6de54004880564306b8730fc92c64dae.jpg",
+            "sell_price": 2195,
+            "market_price":2499,
+            "stock_quantity": 60
+        },
+        {
+            "id": 2,
+            "title": "Redmi 7A",
+            "add_time":"2018-02-25",
+            "zhaiyao": "骁龙8核处理器",
+            "click": 0,
+            "img_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8f2ab52a8c96e5b9ae692576763d641c.jpg?w=1212&h=716",
+            "sell_price": 2395,
+            "market_price":2609,
+            "stock_quantity": 70
+        },
+        {
+            "id": 3,
+            "title": "小米9",
+            "add_time":"2018-02-95",
+            "zhaiyao": "全息幻彩机身，骁龙855 ",
+            "click": 0,
+            "img_url": "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/271093cb5862f9b0073b0bf813e04f52.jpg",
+            "sell_price": 2695,
+            "market_price":2679,
+            "stock_quantity": 80
+        }
+    ]
+}
